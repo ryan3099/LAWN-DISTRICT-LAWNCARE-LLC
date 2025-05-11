@@ -1,67 +1,169 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <title>Lawn District Lawncare LLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #fff;
+      background-color: #1a1a1a;
+      line-height: 1.6;
     }
     header {
-      background-color: #003366;
-      color: white;
-      padding: 30px 20px;
+      background-color: #111;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: #00e676;
+      font-size: 28px;
+    }
+    nav a {
+      margin-left: 20px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
+    }
+    .hero h2 {
+      font-size: 48px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 8px;
     }
     section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+      padding: 60px 30px;
+      max-width: 1100px;
+      margin: auto;
     }
-    h1, h2 {
-      color: #003366;
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      color: #00e676;
+      margin-bottom: 40px;
     }
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: #222;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     }
     footer {
-      background-color: #003366;
-      color: white;
+      background: #000;
+      color: #aaa;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+      padding: 30px 10px;
     }
+    a { color: #00e676; text-decoration: none; }
   </style>
 </head>
 <body>
   <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
+    <h1>Lawn District</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#approach">Approach</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
+  <section class="hero">
+    <h2>Transforming Landscapes with Precision and Passion</h2>
+  </section>
 
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
+  <section id="about">
+    <h3 class="section-title">About Us</h3>
+    <div class="card">
+      <p>Lawn District Lawncare LLC is a trusted name in Ohio's green care industry, dedicated to delivering impeccable lawn maintenance, landscaping, and year-round yard solutions tailored to residential and commercial needs.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h3 class="section-title">Our Services</h3>
+    <div class="grid">
+      <div class="card"><h4>🌿 Lawn Maintenance</h4><p>Consistent and professional mowing, edging, and trimming services.</p></div>
+      <div class="card"><h4>🌸 Landscaping Design</h4><p>Creative garden layouts and plant selections for all seasons.</p></div>
+      <div class="card"><h4>❄️ Snow Removal</h4><p>Efficient snow plowing and de-icing solutions during winter months.</p></div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h3 class="section-title">Gallery</h3>
+    <div class="grid">
+      <div class="card">Before & After Projects</div>
+      <div class="card">Client Lawns</div>
+      <div class="card">Seasonal Displays</div>
+    </div>
+  </section>
+
+  <section id="approach">
+    <h3 class="section-title">Our Approach</h3>
+    <div class="card">
+      <p>We combine local experience with environmental consciousness, offering sustainable practices that beautify your space while caring for the planet.</p>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h3 class="section-title">Project Portfolio</h3>
+    <div class="grid">
+      <div class="card">HOA Community Upgrades</div>
+      <div class="card">Office Parks & Retail Centers</div>
+      <div class="card">Custom Residential Landscaping</div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h3 class="section-title">Client Testimonials</h3>
+    <div class="card">
+      <p>"Lawn District has completely changed the look of our property. Highly recommend their reliable team and affordable service!"</p>
+    </div>
+  </section>
+
+  <section id="team">
+    <h3 class="section-title">Meet the Team</h3>
+    <div class="card">
+      <p>Led by Matthew D. DiSanto, our team of seasoned professionals is passionate about lawn excellence and committed to customer satisfaction.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3 class="section-title">Contact Us</h3>
+    <div class="card">
+      <p><strong>Email:</strong> <a href="mailto:mail@lawndistrictlawncarellc.space">mail@lawndistrictlawncarellc.space</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+15169404954">+1 (516) 940-4954</a></p>
+      <p><strong>Location:</strong> Painesville, Ohio</p>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
+    <p>&copy; 2025 Lawn District Lawncare LLC. All rights reserved.</p>
   </footer>
 </body>
 </html>
